@@ -25,5 +25,4 @@ public class BeerController {
     public ResponseEntity<BeerDto> getBeer( @PathVariable("beerId") UUID beerId){
         return new ResponseEntity<BeerDto>(this.beerService.getBeerById(beerId), HttpStatus.OK );
     }
-
 }
